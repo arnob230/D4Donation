@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel - D4Donation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-row">
+    <a href="index.html" class="logo">D4Donation</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="charities.html">Charities</a></li>
+    </ul>
+    <div class="nav-auth" id="nav-auth-slot"></div>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 30px; padding-bottom: 60px;">
+  <div class="dash-top">
+    <div>
+      <h1>Admin panel</h1>
+      <p>Monitor platform activity and block accounts that show signs of fraud or abuse.</p>
+    </div>
+  </div>
+
+  <div class="stat-row" id="stat-row"></div>
+
+  <h3>All users</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="user-table-body"></tbody>
+  </table>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <b id="year"></b> D4Donation. Dhaka, Bangladesh.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/admin-dashboard.js"></script>
+</body>
+</html>
