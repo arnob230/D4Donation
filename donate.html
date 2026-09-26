@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate - D4Donation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-row">
+    <a href="index.html" class="logo">D4Donation</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="charities.html">Charities</a></li>
+    </ul>
+    <div class="nav-auth" id="nav-auth-slot"></div>
+  </div>
+</header>
+
+<main class="container">
+  <section style="padding-bottom: 0;">
+    <h1>Donate to <b id="charity-name">a charity</b></h1>
+    <p>Tell us what you would like to give and where to collect it from. The charity will review your donation and confirm a pickup.</p>
+  </section>
+
+  <div class="form-layout">
+    <form class="form-main" id="donate-form">
+      <label for="itemType">What are you donating?</label>
+      <select id="itemType" required>
+        <option value="">Select a category</option>
+        <option>Food</option>
+        <option>Money</option>
+        <option>Clothing</option>
+        <option>Books</option>
+        <option>Medicine</option>
+        <option>Furniture</option>
+        <option>Other</option>
+      </select>
+
+      <label for="description">Describe the item(s)</label>
+      <textarea id="description" required placeholder="Example: 20kg rice, 5L soybean oil, 2kg lentils"></textarea>
+
+      <div class="two-col">
+        <div>
+          <label for="donorName">Your name</label>
+          <input type="text" id="donorName" required placeholder="Rahim Uddin">
+        </div>
+        <div>
+          <label for="phone">Contact phone</label>
+          <input type="tel" id="phone" required placeholder="01XXX-XXXXXX">
+        </div>
+      </div>
+
+      <label for="quantity">Quantity / value</label>
+      <input type="text" id="quantity" required placeholder="Example: 20kg or Tk 2,000">
+
+      <label for="address">Pickup address</label>
+      <textarea id="address" required placeholder="House, road, area, city"></textarea>
+
+      <label for="pickupTime">Preferred pickup time</label>
+      <input type="text" id="pickupTime" required placeholder="Example: Saturday morning">
+
+      <br><br>
+      <button type="submit" class="btn btn-primary btn-block">Send donation for review</button>
+    </form>
+
+    <div class="form-side">
+      <h3>What happens next</h3>
+      <ul>
+        <li>The charity reviews your donation details.</li>
+        <li>They accept it and arrange a pickup, or decline with a reason.</li>
+        <li>The charity will contact you directly on the phone number you provide.</li>
+        <li>Once collected, the charity marks it as completed.</li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <b id="year"></b> D4Donation. Dhaka, Bangladesh.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/donate.js"></script>
+</body>
+</html>

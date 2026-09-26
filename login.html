@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in - D4Donation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-row">
+    <a href="index.html" class="logo">D4Donation</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="charities.html">Charities</a></li>
+      <li><a href="index.html#how">How it works</a></li>
+    </ul>
+    <div class="nav-auth" id="nav-auth-slot"></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="auth-box">
+    <h3>Charity / Admin log in</h3>
+    <p>Donors and people asking for help don't need an account - they can donate or request help straight from a charity's page. This log in is only for charities and admins.</p>
+
+    <form id="login-form">
+      <label for="login-role">Login as</label>
+      <select id="login-role" required>
+        <option value="">Select account type</option>
+        <option value="charity">Charity</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <label for="login-email">Username</label>
+      <input type="text" id="login-email" required placeholder="Enter username">
+
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required placeholder="Your password">
+
+      <br><br>
+      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      <p class="hint" style="margin-top:15px;">Admin: admin / admin123 &nbsp; | &nbsp; Charity usernames: asha, prottasha, alor, sheba, manobik, notunbhor &nbsp; | &nbsp; Password: charity123</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <b id="year"></b> D4Donation. Dhaka, Bangladesh.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
