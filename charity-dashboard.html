@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charity Dashboard - D4Donation</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav-row">
+    <a href="index.html" class="logo">D4Donation</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="charities.html">Charities</a></li>
+    </ul>
+    <div class="nav-auth" id="nav-auth-slot"></div>
+  </div>
+</header>
+
+<main class="container" style="padding-top: 30px; padding-bottom: 60px;">
+  <div class="dash-top">
+    <div>
+      <h1 id="charity-title">Charity dashboard</h1>
+      <p>Review incoming donations and help requests, then confirm or decline each one.</p>
+    </div>
+  </div>
+
+  <div class="stat-row" id="stat-row"></div>
+
+  <div class="tabs">
+    <button class="tab-button active" id="tab-btn-donations" type="button">Incoming donations</button>
+    <button class="tab-button" id="tab-btn-requests" type="button">Help requests</button>
+  </div>
+
+  <div id="donations-list"></div>
+  <div id="requests-list" style="display: none;"></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <b id="year"></b> D4Donation. Dhaka, Bangladesh.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/charity-dashboard.js"></script>
+</body>
+</html>
