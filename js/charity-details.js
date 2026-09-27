@@ -19,7 +19,7 @@ function loadCharityDetail() {
     return;
   }
 
-  fetch("charity-detail.html")
+  fetch("charity-details.html")
     .then(function(response) { return response.text(); })
     .then(function(html) {
       var doc = new DOMParser().parseFromString(html, "text/html");
