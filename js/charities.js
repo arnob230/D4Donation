@@ -1,5 +1,5 @@
 function loadCharityGrid() {
-  fetch("charity-detail.html")
+  fetch("charity-details.html")
     .then(function(response) { return response.text(); })
     .then(function(html) {
       var doc = new DOMParser().parseFromString(html, "text/html");
@@ -35,7 +35,7 @@ function createCharityCard(card) {
       '<p>' + location + '</p>' +
       '<p>' + description + '</p>' +
       '<div class="card-footer">' +
-        '<a href="charity-detail.html?id=' + id + '" class="btn btn-secondary btn-small">View charity</a>' +
+        '<a href="charity-details.html?id=' + id + '" class="btn btn-secondary btn-small">View charity</a>' +
       '</div>' +
     '</div>' +
   '</div>';
